@@ -11,7 +11,7 @@ from odoo.exceptions import UserError
 from odoo.osv import expression
 from odoo.tools.float_utils import float_compare, float_is_zero, float_round
 from odoo.tools.misc import clean_context, OrderedSet, groupby
-from odoo.addons.stock.models.StockMove import StockMove as OdooStockMove
+from odoo.addons.stock.models.stock_move import StockMove as OdooStockMove
 
 
 def _action_assign(self, force_qty=False):
