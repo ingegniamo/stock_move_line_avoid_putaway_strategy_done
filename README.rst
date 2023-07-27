@@ -1,24 +1,9 @@
-Title
+Avoid strategy if qty done >0
 ===============================
-Description
+Avoid putaway strategy if qty done >0
 
-Configuration
-=============
-
-Usage
-=====
-Descriprion usage
-
-
-Credits
-=======
-
-Authors
-~~~~~~~
-
-* STeSI s.r.l
 
 Contributors
 ~~~~~~~~~~~~
 
-* Moccia Francesco <moccia.f@stesi.eu>
+* Michele <dicroce.m@stesi.eu>
