@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "",
+    'name': "Stock move line avoid putaway qty done",
     
     'summary': "",
   
