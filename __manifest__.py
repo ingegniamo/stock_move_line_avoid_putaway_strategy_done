@@ -15,7 +15,7 @@
     'website': "http://www.stesi.consulting",
 
     # any module necessary for this one to work correctly
-    'depends': [],
+    'depends': ['stock'],
     
     # always loaded
     'data': [],
