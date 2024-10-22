@@ -10,7 +10,7 @@
 
     'category': '',
   
-    'version': '16.0.0.1',
+    'version': '17.0.0.1',
   
     'website': "http://www.stesi.consulting",
 
