@@ -1,14 +1,12 @@
-
-
-from odoo import _, api, Command, fields, models
-
-
-
+# STeSI Consulting - Francesco Pranzo
+# License OPL-1 (https://www.odoo.com/documentation/user/19.0/legal/licenses/licenses.html).
+from odoo import models
 
 
 class StockMoveLine(models.Model):
     _inherit = "stock.move.line"
 
     def _apply_putaway_strategy(self):
-        self = self.filtered(lambda l: l.qty_done == 0 or not l.picking_id)
-        return super(StockMoveLine,self)._apply_putaway_strategy()
+        # `qty_done` was renamed to `quantity` in Odoo 17.
+        not_picked = self.filtered(lambda l: not l.quantity or not l.picking_id)
+        return super(StockMoveLine, not_picked)._apply_putaway_strategy()

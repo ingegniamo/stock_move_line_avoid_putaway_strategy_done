@@ -1,0 +1,16 @@
+<h1 style="color: #F1972B;">Skip Putaway Strategy on Picked Move Lines</h1>
+<p><strong>Version:</strong> 19.0.1.0.0</p>
+<p><strong>License:</strong> <a href="https://www.odoo.com/documentation/user/19.0/legal/licenses/licenses.html" target="_blank">OPL-1</a></p>
+<p><strong>Author:</strong> STeSI Consulting</p>
+<p><strong>Website:</strong> <a href="https://github.com/ingegniamo/stock_move_line_avoid_putaway_strategy_done" target="_blank">https://github.com/ingegniamo/stock_move_line_avoid_putaway_strategy_done</a></p>
+
+<h2 style="color: #F1972B;">Description</h2>
+<p>Skips the putaway strategy for move lines that already carry a picked quantity, so a manually chosen destination location is not overwritten.</p>
+
+<h2 style="color: #F1972B;">Features</h2>
+<ul>
+<li>Override of <code>_apply_putaway_strategy</code> restricted to lines with no quantity or no transfer</li>
+</ul>
+
+<h2 style="color: #F1972B;">Dependencies</h2>
+<p><code>stock</code></p>
